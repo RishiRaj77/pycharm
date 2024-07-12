@@ -30,3 +30,9 @@ while guess != answer:
     print(f" you have only {turns} turns left")
     guess= int(input("make a guess : "))
     turns = check_answer(guess,answer,turns)
+    if turns == 0:
+        print("har gya bhai bus kar ")
+        break
+    elif guess != answer:
+        print("guess again ")
+
