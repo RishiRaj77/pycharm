@@ -14,4 +14,4 @@ for position in starting_position:
     new1.goto(position)
 
 # Wait for the user to click to close the window
-# Turtle.exitonclick()
+#Turtle.exitonclick()
