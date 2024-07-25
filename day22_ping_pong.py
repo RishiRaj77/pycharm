@@ -10,8 +10,8 @@ screen.bgcolor("black")
 screen.title("ping_pong")
 screen.tracer(0)
 
-r_paddle = Paddle(350 , 0)
-l_paddle = Paddle(-350 , 0)
+r_paddle = Paddle((350 , 0))
+l_paddle = Paddle((-350 , 0))
 ball = Ball ()
 
 
@@ -28,5 +28,17 @@ while is_game_is_on:
     screen.update()
     ball.move()
 
+
+    if ball.ycor() > 300 or ball.ycor()< -300:
+        ball.bounce_y()
+
+    if ball.distance(r_paddle)<50 or ball.xcor() > 340 or ball.distance(l_paddle)< 50 or ball.xcor() > -340 :
+        ball.bounce_x()
+
+    if ball.xcor() > 380:
+        ball.reset_position()
+
+    if ball.xcor() > -380:
+        ball.reset_position()
 
 screen.exitonclick()
