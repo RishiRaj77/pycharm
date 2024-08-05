@@ -16,15 +16,15 @@
 # data = pd.read_csv(" weather-data.csv ")
 # print(data)
 
-# import panda
-#
-# # From a dictionary
-# data = {
-#     'Name': ['Alice', 'Bob', 'Charlie'],
-#     'Age': [25, 30, 35],
-#     'City': ['New York', 'Los Angeles', 'Chicago']
-# }
-# df = panda.DataFrame(data)
-# print(df)
+import pandas
 
-print("hello")
+# From a dictionary
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Los Angeles', 'Chicago']
+}
+df = pandas.DataFrame(data)
+print(df)
+
+
