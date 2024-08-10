@@ -83,10 +83,20 @@
 
 
 #calling two function togher
-def sum(a,b):
-    return a+b
-def square(z):
-    return z*z
+# def sum(a,b):
+#     return a+b
+# def square(z):
+#     return z*z
+#
+# vaps = square(sum(5,2))
+# print(vaps)
 
-vaps = square(sum(5,2))
-print(vaps)
+# def fact(n):
+#     if n < 2:
+#         return 1
+#     else:
+#         return n * (fact(n-1))
+#
+# result = fact(2)
+# print(result)
+print("hello")
