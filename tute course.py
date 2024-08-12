@@ -99,4 +99,51 @@
 #
 # result = fact(2)
 # print(result)
-print("hello")
+# print("hello")
+
+# class car:
+#     color = "black"
+#     type = "suv"
+# car1 = car()
+# print(car1.color.isalpha())
+
+# class emp():
+#     increment = 1.5
+#     def __init__(self,fname,lname,salary):
+#         self.fname = fname
+#         self.lname = lname
+#         self.salary = salary
+#
+#     def increment():
+#         pass
+#
+# harry = emp("raam","shaam",23)
+# rohan = emp("harry" , "bhao",35)
+#
+# print(harry.salary,rohan.lname)
+
+# class A:
+#     def state_1(self):
+#         print("char kelo metr")
+#
+#     def state_2(self):
+#         print("char kela metr")
+#
+# class B(A):
+#     def money(self):
+#         print("char lakh")
+#
+# # a = A()
+# # a.land()
+# b = B
+# b.state_2()
+
+import re
+pattern ="apple"
+x = re.findall("apple",pattern)
+print(x)
+
+if re.match(pattern,"apple"):
+    print("true")
+else:
+    print("false")
